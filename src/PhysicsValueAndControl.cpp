@@ -67,7 +67,7 @@ void allocateVarsMemory(VarsUsed_Euler &Var, int size) {
 	Var.p = (double*)calloc(size, sizeof(double));
 	Var.momt = (double*)calloc(size, sizeof(double));
 	Var.eng = (double*)calloc(size, sizeof(double));
-	//Var.engG = (double*)calloc(size, sizeof(double));  //this special variable is for Gamma-independent characteristic-space;
+
 
 	Var.InternalE = (double*)calloc(size, sizeof(double));
 
