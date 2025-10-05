@@ -19,7 +19,7 @@ Simulation parameters are in the `in.in` file.  The sample program will automati
    3.Time 0                 # Time = 0 → the integration time will use the program's default setting (./src/InitialCDs.cpp).  
                             # Time ≠ 0 → the integration time will advance according to the user-defined value.
 
-   4.nx 200                 # Grid size
+   4.nx 300                 # Grid size
 
    5.cfl 0.5
 
