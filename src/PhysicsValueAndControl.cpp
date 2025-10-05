@@ -113,7 +113,7 @@ void freeVarsOfRoeAV(VarOfRoeAv& AV, int size) {
 
 void allocateAll(PhysicsValueAndParameters &Phy)
 {
-	// iniVarMultiCompEq4(Phy.VarWorking, Phy.Nx + Phy.Ghost * 2);
+	
 	allocateVarsMemory(Phy.Var, Phy.Nx + Phy.Ghost * 2);
 	allocateVarsMemory(Phy.VarRK1, Phy.Nx + Phy.Ghost * 2);
 	allocateVarsMemory(Phy.VarRK2, Phy.Nx + Phy.Ghost * 2);
