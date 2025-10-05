@@ -26,7 +26,7 @@ Simulation parameters are in the `in.in` file.  The sample program will automati
    6.ReconstructType Comp   #   Reconstruction options (./src/FourMethodsForTests.cpp), please choose one:
                             #   Comp    → component-wise reconstruction from the Global Lax-Friedrichs split fluxes(./src/GLF_FVS.cpp)
                             #   Char    → characteristic-wise reconstruction
-                            #   PS      → Pressure and entropy replacement treatment
+                            #   PS      → pressure and entropy replacement treatment
                             #   Co      → improved common-weights method
 #-------------------
 

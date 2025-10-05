@@ -6,7 +6,11 @@
 void D1Euler::CalculateCharactMatrices(int I, char flag)
 {
 
+	// flag-> 'n':genuinely nonlinear fields
+	//        'l':linearly degenerated field
+	//        'f':full matrices
 	//--------------------------
+
 	// Simple denotations of WorkingVaribales For reconstruction----Begin
 	double *Rho = Phy.VarWorking.dens;
 	double *u = Phy.VarWorking.u;
