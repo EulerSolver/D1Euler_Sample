@@ -283,8 +283,9 @@ void D1Euler::PressureEntropyReplacement()
 		// ForSecondTerm = l_m \cdot (F_{j+1 / 2,1}-F_{j+1 / 2,2})
 		double ForSecondTerm = (FtP[1] + FtM[1]) * Phy.L[7] + (FtP[2] + FtM[2]) * Phy.L[8] + (FtP[3] + FtM[3]) * Phy.L[9];
 
-		//                                      ForFirstTerm R_1       and  ForSecondTerm R_m
+		
 		double Reconstructed_F_interface_dens = 0, Reconstructed_F_interface_momt = 0, Reconstructed_F_interface_eng = 0;
+      //                                  ForFirstTerm R_1       and  ForSecondTerm R_m  
 		Reconstructed_F_interface_dens += ForFirstTerm * Phy.R[1] + ForSecondTerm * Phy.R[3];
 		Reconstructed_F_interface_momt += ForFirstTerm * Phy.R[4] + ForSecondTerm * Phy.R[6];
 		Reconstructed_F_interface_eng += ForFirstTerm * Phy.R[7] + ForSecondTerm * Phy.R[9];
