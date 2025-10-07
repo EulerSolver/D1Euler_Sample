@@ -234,7 +234,7 @@ void D1Euler::PressureEntropyReplacement()
 		CalculateCharactMatrices(i, 'n');
 
 		double L_F1P[5], L_F2P[5], L_F3P[5]; // Linear reconstruction of the split fluxes on each sub-stencil.--UpWinding
-		double L_F1M[5], L_F2M[5], L_F3M[5]; // Linear reconstruction of the split fluxes on each sub-stencil.--DownWinding
+		double L_F1M[5], L_F2M[5], L_F3M[5]; // --DownWinding
 
 		{ // Get the linear reconstructions
 			double rc, W[10];
