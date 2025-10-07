@@ -278,9 +278,9 @@ void D1Euler::PressureEntropyReplacement()
 			FtM[3] += L_F3M[h] * wt_M;
 		}
 		//---
-		// ForFirstTerm = l_1 \cdot (F_{j+1 / 2,1/m}-F_{j+1 / 2,2})
+		// ForFirstTerm = l_1 \cdot (F_{j+1/2,1/m}-F_{j+1/2,2})
 		double ForFirstTerm = (FtP[1] + FtM[1]) * Phy.L[1] + (FtP[2] + FtM[2]) * Phy.L[2] + (FtP[3] + FtM[3]) * Phy.L[3];
-		// ForSecondTerm = l_m \cdot (F_{j+1 / 2,1/m}-F_{j+1 / 2,2})
+		// ForSecondTerm = l_m \cdot (F_{j+1/2,1/m}-F_{j+1/2,2})
 		double ForSecondTerm = (FtP[1] + FtM[1]) * Phy.L[7] + (FtP[2] + FtM[2]) * Phy.L[8] + (FtP[3] + FtM[3]) * Phy.L[9];
 
 		
