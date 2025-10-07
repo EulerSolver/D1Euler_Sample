@@ -263,7 +263,7 @@ void D1Euler::PressureEntropyReplacement()
 		double FtM[5];
 		int loopTemp = 3;
 
-		// Calculate the first an second terms of Eq.(4.6), projections and inverse projections
+		// Calculate the first and second terms of Eq.(4.6), projections and inverse projections
 		for (size_t h = 0; h < loopTemp; h++)
 		{
 			// (F^+_{j+1/2,1/m}-F^+_{j+1/2,2})
@@ -288,7 +288,7 @@ void D1Euler::PressureEntropyReplacement()
 		Reconstructed_F_interface_dens += ForFirstTerm * Phy.R[1] + ForSecondTerm * Phy.R[3];
 		Reconstructed_F_interface_momt += ForFirstTerm * Phy.R[4] + ForSecondTerm * Phy.R[6];
 		Reconstructed_F_interface_eng += ForFirstTerm * Phy.R[7] + ForSecondTerm * Phy.R[9];
-		// Calculate the first an second terms of Eq.(4.6), projections and inverse projections
+		// Calculate the first and second terms of Eq.(4.6), projections and inverse projections
 
 		// Adding up the last term of Eq.(4.6)
 		for (size_t h = 0; h <= loopTemp; h++)
