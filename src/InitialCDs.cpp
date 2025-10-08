@@ -2,9 +2,7 @@
 #define INI_CPP
 
 #include "InitialCDs.h"
-// #include "PhysicsValueAndControl.h"
 #include <iostream>
-// #pragma warning(disable:26495)
 #include <cmath>
 #include <iostream>
 
