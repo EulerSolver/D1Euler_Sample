@@ -224,7 +224,7 @@ void D1Euler::PressureEntropyReplacement()
 	for (int i = 0; i < Phy.NxAug; i++)
 	{
 		// Entropy[i] = log(p[i] / pow(Phy.VarWorking.dens[i], Phy.gamma));
-		Entropy[i] = (p[i] / pow(rho[i], Phy.gamma)); // This way seems more robust
+		Entropy[i] = (p[i] / pow(rho[i], Phy.gamma)); //
 	}
 
 	int boundL = Phy.Ghost - 1, boundR = Phy.NxAug - Phy.Ghost;
