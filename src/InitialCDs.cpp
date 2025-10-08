@@ -167,55 +167,6 @@ InitailCDs::InitailCDs(PhysicsValueAndParameters &Phy)
 		double tt = 1e-4;
 		double gamma = 1.4;
 
-		{
-			// Initial conditions reference----Begin
-
-			// From Finite diﬀerence alternative WENO schemes with Riemann invariant-based Yue Wu† and Chi-Wang Shu‡
-			// The initial condition is (ρ, u, p) = (2,    0,  e9 ) for x < 0
-			//                      and (ρ, u, p) = (1e−3, 0,   1 )
-			//    T = 5 × 10−5.
-			// computation domain is [−5, 5].
-			// double domainL = -5.0, domainR = 5;
-			// double rhoL = 2, uL = 0, pL = 1e9;
-			// double rhoR = 1e-3, uR = 0, pR = 1.0;
-			// double tt = 5e-5;
-			// double gamma = 1.4;
-			// Yue Wu† and Chi-Wang Shu‡  _End
-
-			// 		The fourth problem is the Le Blanc problem [57].   TENO_Peng
-			//(rho, u, p) = (1, 0, 2/3 e-1) (0 < x< 3)
-			//(rho, u, p) = (1, 0, 2/3 e-10) (3 < x< 9)
-			// t = 6
-			// double domainL = 0.0, domainMid = 3.0,  domainR = 9;
-			// double rhoL = 1, uL = 0, pL = 2.0/3 * 1e-1;
-			// double rhoR = 1, uR = 0, pR = 2.0/3 * 1e-10;
-			// double tt = 6e0;
-			// double gamma = 1.4;
-			//   TENO_Peng_End
-
-			//    A low-dissipation shock-capturing framework with flexible nonlinear dissipation control
-			//  Yue Lia, Lin Fub,∗, Nikolaus A. Adams
-			//(rho, u, p) = (1,   0, 2/3 e-1) (0 < x< 3)
-			//(rho, u, p) = (e-3, 0, 2/3 e-10) (3 < x< 9)
-			//     t = 6.  \gamma = 5 / 3;
-			// double domainL = 0.0, domainMid = 3.0, domainR = 9;
-			// double rhoL = 1, uL = 0, pL = 2.0/3 * 1e-1;
-			// double rhoR = 1e-3, uR = 0, pR = 2.0/3 * 1e-10;
-			// double tt = 6e0;
-			// double gamma = 5.0 / 3;
-
-			// An eﬃcient modified WENO --Delin Chai, Guang Xia, Zhongguo Sun Computer&Fluids 2018
-			//    (rho, u, p) = (2,   0, e9) (0<x<10)
-			//                = (e-3, 0,  1) (10<x<20)
-			//    t= e-4
-			// double domainL = 0.0, domainMid = 10, domainR = 20;
-			// double rhoL = 2,    uL = 0, pL = 1e9;
-			// double rhoR = 1e-3, uR = 0, pR = 1.0;
-			// double tt = 1e-4;
-			// double gamma = 1.4;
-			// Initial conditions reference----End
-		}
-
 		// Phy.boundary = "ref";
 		Phy.boundaryCD = "fix";
 		Phy.tf = tt;
